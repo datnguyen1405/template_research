@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Report</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Generate Stock Report</h2>
+        <form method="POST" action="/generate-report">
+            <label>Symbol to generate report:</label><br>
+            <input type="text" name="main_symbol" required><br><br>
+
+            <label>Comparison Symbol 1:</label><br>
+            <input type="text" name="comp_symbol1" required><br><br>
+
+            <label>Comparison Symbol 2:</label><br>
+            <input type="text" name="comp_symbol2" required><br><br>
+
+            <label>Comparison Symbol 3:</label><br>
+            <input type="text" name="comp_symbol3" required><br><br>
+
+            <button type="submit">Generate Report</button>
+        </form>
+    </div>
+</body>
+</html>

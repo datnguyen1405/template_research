@@ -1,0 +1,8 @@
+virenv_bk
+virenv
+venv
+debug.log
+__pycache__
+*.pyc
+.env
+temp_json.json
